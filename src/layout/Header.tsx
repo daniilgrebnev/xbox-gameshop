@@ -12,7 +12,7 @@ const Header = () => {
 	const count = cartItems.length
 
 	return (
-		<div className='fixed top-0 left-0 w-screen bg-black h-[70px] flex justify-between items-center z-50 select-none'>
+		<div className=' fixed top-0 left-0 w-screen bg-black h-[70px] flex justify-between items-center z-50 select-none'>
 			<div className='container flex justify-between items-center'>
 				<div className='flex items-center select-none'>
 					<Logo width='50px' fill='#107c10' />
