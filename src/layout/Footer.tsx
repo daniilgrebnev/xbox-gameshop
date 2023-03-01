@@ -8,14 +8,14 @@ import supportEmail from '../assets/icons/png/supportEmail.png'
 const Footer = () => {
 	return (
 		<div className='bg-dark w-full select-none'>
-			<div className='container flex items-cemter justify-between py-5 '>
+			<div className='container flex items-cemter justify-between py-5 sm:justify-center'>
 				<div className='flex items-center select-none'>
 					<Logo width='50px' fill='#107c10' />
 					<p className='font-righteous text-2xl ml-5 text-green px-2 py-1 rounded-2xl'>
 						Xbox-Gaming
 					</p>
 				</div>
-				<div className='flex items-center justify-center'>
+				<div className='flex items-center justify-center sm:hidden'>
 					<img className='w-5 mr-2 ' src={phone} alt='' />
 					<a
 						href='tel:999 99 99 99'
@@ -24,25 +24,25 @@ const Footer = () => {
 						999 99 99 99
 					</a>
 				</div>
-				<div className='flex items-center justify-center'>
+				<div className='flex items-center justify-center sm:hidden'>
 					<img className='w-5 mr-2 ' src={email} alt='' />
 					<a
 						href='email:example@ex.com'
-						className='text-white bg-black px-2 py-1 rounded-2xl'
+						className='text-white bg-black px-2 py-1 rounded-2xl sm:hidden'
 					>
 						example@ex.com
 					</a>
 				</div>
-				<div className='flex items-center justify-center'>
+				<div className='flex items-center justify-center sm:hidden'>
 					<img className='w-5 mr-2 ' src={supportEmail} alt='' />
 					<a
 						href='email:exInfo@ex.com'
-						className='text-white bg-black px-2 py-1 rounded-2xl'
+						className='text-white bg-black px-2 py-1 rounded-2xl sm:hidden'
 					>
 						exInfo@ex.com
 					</a>
 				</div>
-				<div className='flex items-center justify-center'>
+				<div className='flex items-center justify-center sm:hidden'>
 					<img className='w-5 mr-2 text-white' src={adress} alt='' />
 					<div className='flex bg-black  px-2 py-1 rounded-2xl'>
 						<p className='text-white mx-2'>city: Fedor</p>
@@ -50,7 +50,7 @@ const Footer = () => {
 						<p className='text-white mx-1'>home: 21</p>
 					</div>
 				</div>
-				<div className='flex items-center justify-center'>
+				<div className='flex items-center justify-center sm:hidden'>
 					<img className='w-5 mr-2   ' src={companyName} alt='' />
 					<p className='text-white bg-black px-2 py-1 rounded-2xl'>
 						OOO "Jopa"

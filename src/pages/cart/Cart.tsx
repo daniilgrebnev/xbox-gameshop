@@ -28,20 +28,22 @@ const Cart = () => {
 					) : (
 						<div
 							className={
-								cartItems.length > 1 ? 'grid grid-cols-2' : 'mx-auto w-[650px]'
+								cartItems.length > 1
+									? 'grid grid-cols-2 sm:block'
+									: 'mx-auto w-[650px] sm:w-11/12 '
 							}
 						>
 							{cartItems.map(item => (
 								<CartItem {...item} key={item.id} />
 							))}
 
-							<button className='px-4 fixed h-[100px] top-[70px] right-3  w-1/6 text-2xl rounded-2xl bg-dark  transition text-white mx-auto  '>
+							<button className='px-4 fixed h-[100px] top-[70px] right-3  w-1/6 text-2xl rounded-2xl bg-dark  transition text-white mx-auto  sm:relative sm:bottom-12 sm:top-auto sm:w-full sm:right-0 '>
 								Total Price:
 								<b className='ml-4 font-righteous tracking-widest'>{price}</b>$
 							</button>
 							<Link
 								to='/checkout'
-								className='px-4 fixed h-[60px] top-[170px] right-3 flex items-center justify-center w-1/6 text-2xl rounded-2xl bg-[#d5ff03] hover:bg-[#0062ff] transition-all text-black mx-auto  '
+								className='px-4  sm:relative sm:bottom-10 sm:top-auto sm:w-[200px] sm:right-0 fixed h-[60px] top-[170px] right-3  flex items-center justify-center w-1/6 text-2xl rounded-2xl bg-[#d5ff03] hover:bg-[#0062ff] transition-all text-black sm:mx-auto  '
 							>
 								<PayPal width='150px' />
 							</Link>
