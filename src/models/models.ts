@@ -25,3 +25,8 @@ export type TItemCard = {
 	currentWidth?: string
 	count?: number
 }
+export interface IFooter {
+	id: string
+	text: string
+	isLink: boolean
+}
